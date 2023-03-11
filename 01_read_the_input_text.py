@@ -14,10 +14,12 @@ def main():
     fname = sys.argv[1]
     text = read_file(fname)
     #
-    tts = gTTS(text=text, lang='en')
-    tts.save(f"out.mp3")
+    print("# working...")
+    tts = gTTS(text=text, lang="en")
+    tts.save("out.mp3")
     #
-    print("done")
+    print("# out.mp3 was saved")
+
 
 ##############################################################################
 
